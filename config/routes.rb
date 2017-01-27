@@ -7,12 +7,14 @@ namespace :admin do
       post :publish
       post :hide
     end
+
+    resources :resumes
   end
 end
 
   resources :jobs do
     resources :resumes
   end
-  
+
   root 'jobs#index'
 end
