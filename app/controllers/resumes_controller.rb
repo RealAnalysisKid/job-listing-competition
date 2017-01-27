@@ -18,12 +18,11 @@ class ResumesController < ApplicationController
     else
       render :new
     end
+
   end
 
-private
-
-def resume_params
-  params.require(:resume).permit(:content, :attachment)
-end
+  def resume_params
+    params.require(:resume).permit(:content, :attachment)
+  end
 
 end

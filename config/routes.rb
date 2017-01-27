@@ -7,6 +7,8 @@ namespace :admin do
       post :publish
       post :hide
     end
+
+    resource :resumes
   end
 end
 
