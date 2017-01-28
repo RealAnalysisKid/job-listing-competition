@@ -12,6 +12,10 @@ namespace :admin do
   end
 end
 
+  resources :welcome do
+    
+  end
+
   resources :jobs do
     resources :resumes
   end
